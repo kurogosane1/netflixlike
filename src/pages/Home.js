@@ -8,7 +8,6 @@ import {
   SubContainer,
   SubSubCont,
   Letters,
-  LetterHeading,
   SignUpButton,
   TextHeadingFront,
   TextSpanFront,

@@ -23,7 +23,7 @@ const RowLines = (props) => {
       setLoading(false);
       return request;
     }
-    GetData();
+    return GetData();
   }, [fetchURL]);
 
   const options = {
@@ -50,7 +50,9 @@ const RowLines = (props) => {
     }
   }
 
-  return (
+  return loading ? (
+    <h1>Loading...</h1>
+  ) : (
     <>
       <Container>
         <Text>{title}</Text>

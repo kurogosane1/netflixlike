@@ -36,7 +36,7 @@ const Banner = ({ fetchURL }) => {
     return str?.length > num ? str.substr(0, num - 1) + " . . ." : str;
   };
 
-  return movie ? (
+  return movie && loading ? (
     <Header
       backgroundImage={`${process.env.REACT_APP_IMAGE_EXTENSION}${movie.backdrop_path}`}>
       <BannerContainer>
