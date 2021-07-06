@@ -10,7 +10,7 @@ function SignIn() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [validatePass, setValidatePass] = useState();
-  const [verified, setVerified] = useState(false);
+  // const [verified, setVerified] = useState(false);
   const [errorMes, setErrorMes] = useState("");
   const { setCurrentUser } = useContext(AuthContext);
   let history = useHistory();
@@ -42,9 +42,9 @@ function SignIn() {
     setErrorMes("");
     console.log(userPassword.current.value, validatePassword.current.value);
     if (password === validatePass) {
-      setVerified(true);
+      // setVerified(true);
     }
-    return setVerified(false);
+    // return setVerified(false);
   }, [password, validatePass]);
 
   return (

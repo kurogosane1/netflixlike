@@ -33,10 +33,11 @@ const Banner = ({ fetchURL }) => {
   }, [fetchURL]);
 
   const reduceLength = (str, num) => {
+    console.log(loading);
     return str?.length > num ? str.substr(0, num - 1) + " . . ." : str;
   };
 
-  return movie && loading ? (
+  return movie ? (
     <Header
       backgroundImage={`${process.env.REACT_APP_IMAGE_EXTENSION}${movie.backdrop_path}`}>
       <BannerContainer>

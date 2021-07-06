@@ -14,7 +14,7 @@ function CheckIfSign({ children, ...rest }) {
 
   useEffect(() => {
     return checkUser();
-  }, []);
+  });
   return (
     <Route
       {...rest}
